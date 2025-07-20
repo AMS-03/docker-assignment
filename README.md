@@ -22,3 +22,90 @@ This setup simulates a common full-stack application, where different technologi
 
 ## 📂 Project Structure
 
+```
+.
+├── docker-compose.yml       # Main orchestration file
+├── .gitignore               # Ignore node_modules & env files
+├── README.md                # This file
+├── frontend/                # React frontend
+│   ├── Dockerfile
+│   ├── package.json
+│   └── src/App.js
+└── php-backend/             # PHP backend connected to MySQL
+    ├── Dockerfile
+    └── index.php
+```
+
+---
+
+## ⚙️ How to Run Locally
+
+1. Make sure you have Docker & Docker Compose installed
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/docker-assignment.git
+   cd docker-assignment
+   ```
+3. Build and run the containers:
+   ```bash
+   docker-compose up --build
+   ```
+
+---
+
+## 🌐 URLs to Access
+
+| Service    | URL                  | Description                         |
+|------------|----------------------|-------------------------------------|
+| Frontend   | http://localhost:3000| React app showing backend response  |
+| Backend    | http://localhost:8080| PHP connecting to MySQL             |
+
+---
+
+## 🧠 How It Works
+
+- The **frontend** service sends a request to `http://php` (Docker internal DNS) to reach the PHP backend.
+- The **backend** uses `mysqli` to connect to the `mysql` container and checks the connection status.
+- All services are isolated but can talk to each other using their service names as hostnames.
+
+---
+
+## 📝 .gitignore
+
+```gitignore
+node_modules
+.env
+```
+
+This keeps unnecessary or sensitive files out of your version control.
+
+---
+
+## 💡 Possible Improvements
+
+- Add dynamic MySQL queries or auth logic in PHP
+- Use `.env` files for config separation
+- Add Docker health checks and NGINX as reverse proxy
+- Create production-ready Dockerfiles for optimized builds
+
+---
+
+## 👨‍💻 Author
+
+**Ahmed Salem**  
+Cybersecurity Awareness & DevOps Enthusiast  
+📫 [LinkedIn](https://www.linkedin.com/in/ahmed-mohamed-salem-/)
+
+---
+
+## 📸 Screenshots (Optional)
+
+Feel free to add UI or terminal screenshots here!
+
+---
+
+## 📬 Need Help?
+
+If you're trying to expand or deploy this project, feel free to reach out.
+
+---
