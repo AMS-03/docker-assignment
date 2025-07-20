@@ -79,33 +79,9 @@ node_modules
 
 This keeps unnecessary or sensitive files out of your version control.
 
----
-
-## 💡 Possible Improvements
-
-- Add dynamic MySQL queries or auth logic in PHP
-- Use `.env` files for config separation
-- Add Docker health checks and NGINX as reverse proxy
-- Create production-ready Dockerfiles for optimized builds
-
----
 
 ## 👨‍💻 Author
 
 **Ahmed Salem**  
-Cybersecurity Awareness & DevOps Enthusiast  
+Cybersecurity Awareness Specialist Intern  
 📫 [LinkedIn](https://www.linkedin.com/in/ahmed-mohamed-salem-/)
-
----
-
-## 📸 Screenshots (Optional)
-
-Feel free to add UI or terminal screenshots here!
-
----
-
-## 📬 Need Help?
-
-If you're trying to expand or deploy this project, feel free to reach out.
-
----
